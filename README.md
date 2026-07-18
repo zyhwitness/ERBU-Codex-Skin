@@ -2,7 +2,7 @@
 
 基于开源项目 [Fei-Away/Codex-Dream-Skin](https://github.com/Fei-Away/Codex-Dream-Skin) 二次修改的一套 Codex Desktop 主题。
 
-在原项目提供的主题注入、运行时切换、背景图加载和 macOS 脚本能力之上，继续做了「一二布布」主题定制和少量逻辑扩展。
+在原项目提供的主题注入、运行时切换、背景图加载和脚本能力之上，继续做了「一二布布」主题定制和少量逻辑扩展。
 
 ## 主题效果展示
 <img width="1782" height="1089" alt="截屏2026-07-18 11 33 34" src="https://github.com/user-attachments/assets/773575fe-1887-49aa-8fc3-f2301c88ce18" />
