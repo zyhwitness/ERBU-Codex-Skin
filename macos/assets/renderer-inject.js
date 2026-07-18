@@ -578,7 +578,7 @@
     shell ||= root.getAttribute(SHELL_ATTR) || resolvedShell();
     const shellMain = document.querySelector("main.main-surface") || document.querySelector("main");
     const homeIndicator = document.querySelector('[data-testid="home-icon"]');
-    const home = homeIndicator?.closest('[role="main"]') ||
+    const home = homeIndicator?.closest?.('[role="main"]') ||
       [...document.querySelectorAll('[role="main"]')].find((candidate) =>
         candidate.querySelector('[data-feature="game-source"]') &&
         candidate.querySelector('.group\\\\/home-suggestions')) || null;
@@ -645,7 +645,7 @@
         heroStickerImage: chrome.querySelector(".dream-skin-hero-sticker img"),
       };
     }
-    if (!chromeDecor || chromeDecor.brandIcon?.closest(`#${CHROME_ID}`) !== chrome) {
+    if (!chromeDecor || chromeDecor.brandIcon?.closest?.(`#${CHROME_ID}`) !== chrome) {
       chromeDecor = {
         brandIcon: chrome.querySelector(".dream-skin-brand-icon"),
         cornerBadge: chrome.querySelector(".dream-skin-corner-badge"),

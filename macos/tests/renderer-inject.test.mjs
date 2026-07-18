@@ -208,6 +208,7 @@ function createFixture(theme, {
       };
     }
     const childNodes = new Map();
+    const attributes = new Map();
     const element = {
       id: "",
       dataset: {},
@@ -216,10 +217,33 @@ function createFixture(theme, {
       parentElement: null,
       textContent: "",
       innerHTML: "",
-      setAttribute() {},
+      getAttribute(name) { return attributes.get(name) ?? null; },
+      setAttribute(name, value) {
+        const normalized = String(value);
+        attributes.set(name, normalized);
+        if (name === "id") element.id = normalized;
+      },
+      removeAttribute(name) {
+        attributes.delete(name);
+        if (name === "id") element.id = "";
+      },
       querySelector(selector) {
-        if (!childNodes.has(selector)) childNodes.set(selector, { textContent: "" });
+        if (!childNodes.has(selector)) {
+          childNodes.set(selector, createElement("div"));
+          childNodes.get(selector).parentElement = element;
+        }
         return childNodes.get(selector);
+      },
+      querySelectorAll() { return []; },
+      closest(selector) {
+        if (typeof selector !== "string" || !selector.startsWith("#")) return null;
+        const targetId = selector.slice(1);
+        let current = element;
+        while (current) {
+          if (current.id === targetId) return current;
+          current = current.parentElement;
+        }
+        return null;
       },
       remove() { if (element.id) nodes.delete(element.id); },
     };
