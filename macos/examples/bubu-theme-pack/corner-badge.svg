@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff2cc"/>
+      <stop offset="58%" stop-color="#ffd06e"/>
+      <stop offset="100%" stop-color="#f1a244"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff6dc"/>
+      <stop offset="100%" stop-color="#ffe39c"/>
+    </linearGradient>
+  </defs>
+  <circle cx="120" cy="120" r="112" fill="url(#g)" stroke="#cf7b2f" stroke-width="8"/>
+  <path d="M70 82c18-24 40-36 66-36 30 0 58 20 76 54" fill="none" stroke="url(#arc)" stroke-width="12" stroke-linecap="round"/>
+  <text x="120" y="132" text-anchor="middle" font-size="34" font-family="Arial, sans-serif" fill="#95490d" font-weight="700">ERBU</text>
+  <text x="120" y="166" text-anchor="middle" font-size="18" font-family="Arial, sans-serif" fill="#7b5222">dream skin</text>
+</svg>

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "custom-bubu-theme",
+  "name": "一二布布 Dream Skin",
+  "brandSubtitle": "ERBU EDITION",
+  "tagline": "沉浸式一二布布主题 Codex 工作台",
+  "projectPrefix": "一二布布 · ",
+  "projectLabel": "◉  选择项目",
+  "statusText": "BUBU ONLINE",
+  "quote": "MAKE CODING SOFTER",
+  "image": "erbu2.png",
+  "appearance": "light",
+  "art": {
+    "safeArea": "center",
+    "taskMode": "ambient"
+  },
+  "colors": {
+    "background": "#fff7fa",
+    "panel": "#fffdfd",
+    "panelAlt": "#fff3f7",
+    "accent": "#8f9550",
+    "accentAlt": "#a8b06a",
+    "secondary": "#7f8b4a",
+    "highlight": "#6f7740",
+    "text": "#3a2b32",
+    "muted": "#8d7882",
+    "line": "rgba(143, 149, 80, .24)"
+  },
+  "decor": {
+    "brandIcon": {
+      "file": "corner-badge.svg",
+      "size": 52,
+      "opacity": 1,
+      "offsetX": 0,
+      "offsetY": 65
+    },
+    "heroSticker": {
+      "file": "erbu3-cutout.png",
+      "size": 236,
+      "opacity": 0.98,
+      "offsetX": -150,
+      "offsetY": 0
+    }
+  }
+}
