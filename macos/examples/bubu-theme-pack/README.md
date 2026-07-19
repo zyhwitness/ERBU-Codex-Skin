@@ -15,6 +15,19 @@
 
 本主题包是在原项目基础上继续定制，并补充了部分更适合角色主题的显示逻辑与同步脚本。
 
+## 使用前提
+
+这不是独立主题安装器。
+
+在使用这套主题之前，你需要先安装仓库里的 macOS Dream Skin 底座，也就是先执行：
+
+```bash
+cd macos
+./scripts/install-dream-skin-macos.sh --no-launch
+```
+
+只有底座安装完成后，下面的同步和应用脚本才会生效。
+
 ## 这套主题做了什么改动
 
 ### 视觉素材
@@ -59,7 +72,7 @@
 修改完 `theme.json` 或素材后运行：
 
 ```bash
-/ERBU-Codex-Skin/macos/examples/bubu-theme-pack/sync-live-theme.sh --apply
+./macos/examples/bubu-theme-pack/sync-live-theme.sh --apply
 ```
 
 ### 方式二：双击应用
@@ -67,7 +80,7 @@
 直接双击：
 
 ```text
-Sync Bubu Theme.command
+macos/examples/bubu-theme-pack/Sync Bubu Theme.command
 ```
 
 它会自动：
@@ -75,6 +88,8 @@ Sync Bubu Theme.command
 1. 把当前目录同步到本机主题库目录
 2. 覆盖当前正在生效的 live 主题目录
 3. 立即重新应用主题
+
+如果执行时报找不到 `switch-theme-macos.sh`，说明 Dream Skin 底座还没安装。
 
 ## 源码目录和 live 目录的区别
 
@@ -102,3 +117,4 @@ Sync Bubu Theme.command
 - 请遵守原项目的开源协议
 - 如公开发布，请确认你使用的角色素材、背景图和衍生图具备可公开分发权限
 - 本主题不修改官方 `.app` 安装包，依赖原项目提供的主题注入机制
+- 当前这套主题包是按 macOS 目录结构整理的，不是 Windows 直接可用包
