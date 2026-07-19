@@ -126,7 +126,7 @@ function Install-DreamSkinRuntimeEngine {
   $fullStateRoot = [System.IO.Path]::GetFullPath($StateRoot)
   $engine = Get-DreamSkinRuntimeEnginePaths -StateRoot $fullStateRoot
   $required = @(
-    'assets\dream-reference.jpg',
+    'assets\erbu2.png',
     'assets\dream-skin.css',
     'assets\renderer-inject.js',
     'assets\theme.json',

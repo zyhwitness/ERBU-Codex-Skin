@@ -12,23 +12,23 @@ import {
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const windowsRoot = path.resolve(here, "..");
-const featured = await fs.readFile(path.join(windowsRoot, "assets", "dream-reference.jpg"));
+const featured = await fs.readFile(path.join(windowsRoot, "assets", "erbu2.png"));
 const helper = path.join(windowsRoot, "scripts", "image-metadata.mjs");
 
-assert.deepEqual(readImageMetadata(featured, ".jpg"), {
-  width: 2560,
-  height: 1440,
-  ratio: 2560 / 1440,
-  wide: true,
-  aspect: "wide",
+assert.deepEqual(readImageMetadata(featured, ".png"), {
+  width: 1672,
+  height: 941,
+  ratio: 1672 / 941,
+  wide: false,
+  aspect: "standard",
   taskMode: "ambient",
 });
 
-const cli = spawnSync(process.execPath, [helper, "--check", path.join(windowsRoot, "assets", "dream-reference.jpg")], {
+const cli = spawnSync(process.execPath, [helper, "--check", path.join(windowsRoot, "assets", "erbu2.png")], {
   encoding: "utf8",
 });
 assert.equal(cli.status, 0);
-assert.deepEqual(JSON.parse(cli.stdout), readImageMetadata(featured, ".jpg"));
+assert.deepEqual(JSON.parse(cli.stdout), readImageMetadata(featured, ".png"));
 
 assert.deepEqual(classifyImageDimensions({ width: 800, height: 1200 }), {
   width: 800,
@@ -52,8 +52,8 @@ oversizedPngHeader.writeUInt32BE(10000, 16);
 oversizedPngHeader.writeUInt32BE(6000, 20);
 assert.equal(readImageMetadata(oversizedPngHeader, ".png"), null);
 
-const malformedJpeg = Buffer.from(featured.subarray(0, 64));
-malformedJpeg[0] = 0;
-assert.equal(readImageMetadata(malformedJpeg, ".jpg"), null);
+const malformedPng = Buffer.from(featured.subarray(0, 64));
+malformedPng[0] = 0;
+assert.equal(readImageMetadata(malformedPng, ".png"), null);
 
 console.log("PASS: Windows injector reads strict image dimensions before building the payload.");

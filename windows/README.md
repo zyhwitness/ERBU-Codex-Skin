@@ -6,6 +6,8 @@
 
 Codex Dream Skin 通过本机回环 CDP 给官方 Codex Windows 桌面应用加载外部主题。它保留原生侧栏、项目选择、任务内容和输入框，不修改 WindowsApps、`app.asar` 或应用签名。
 
+这个仓库当前已经把「一二布布 Dream Skin」作为 Windows 默认种子主题一起打包好了。也就是说，Windows 用户按下面步骤安装后，首次看到的就是 ERBU 主题底图和对应绿色主调，而不是原项目默认示例图。
+
 ## 运行要求
 
 - 从 Microsoft Store 安装且已注册到当前用户的官方 `OpenAI.Codex` 应用。
@@ -27,6 +29,8 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-dream-
 - `Codex Dream Skin`：启动或重新应用皮肤。
 - `Codex Dream Skin - Tray`：打开系统托盘主题控制。
 - `Codex Dream Skin - Restore`：恢复官方外观并关闭已保存的 CDP 会话。
+
+首次安装完成后，默认会播种并启用一套内置的 `一二布布 Dream Skin` 主题。
 
 如需使用自定义端口，可以在安装时传入 `-Port`。端口范围必须是 `1024` 到 `65535`。
 
@@ -70,6 +74,8 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\verify-dream-s
 - 暂停或继续显示皮肤。
 - 重新应用主题，或完整恢复 Codex。
 
+如果你想回到这套仓库自带的 ERBU 版本，可以在「已保存主题」里重新切回 `一二布布 Dream Skin`。
+
 导入图片必须是纯背景，不要使用包含窗口、侧栏、输入框、文字或按钮的效果截图。图片上限为 16 MB；宽或高不能超过 16384 像素，总像素不能超过 5000 万。
 
 ## 恢复与卸载快捷方式
@@ -105,6 +111,14 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\restore-dream-
 | Codex 配置 | `%USERPROFILE%\.codex\config.toml` |
 
 更完整的平台路径说明见 [`../docs/platforms.md`](../docs/platforms.md)。
+
+## 当前这套 Windows 版包含什么
+
+- ERBU 背景图已内置为默认种子主题
+- 首页和任务页会跟随 ERBU 背景自动生成协调的绿色主调
+- 目前 Windows 版走的是稳定的“背景图 + 自适应主题”方案
+
+和 macOS 相比，Windows 当前没有单独接入 `heroSticker`、`brandIcon` 这类额外挂件位，所以 Windows 版会更偏“完整背景主题”，而不是完全 1:1 复刻 macOS 上的装饰布局。
 
 ## 常见问题
 

@@ -612,21 +612,21 @@ try {
   $themeStateRoot = Join-Path $temporaryRoot 'theme-state'
   $themePaths = Initialize-DreamSkinThemeStore -SkillRoot $Root -StateRoot $themeStateRoot
   $initialTheme = Read-DreamSkinTheme -ThemeDirectory $themePaths.Active
-  if ($initialTheme.Theme.id -cne 'preset-romantic-rose' -or
-    $initialTheme.Theme.name -cne '桥本有菜' -or
-    $initialTheme.Theme.appearance -cne 'auto' -or
-    $initialTheme.Theme.art.safeArea -cne 'left' -or
+  if ($initialTheme.Theme.id -cne 'preset-erbu-dream-skin' -or
+    $initialTheme.Theme.name -cne '一二布布 Dream Skin' -or
+    $initialTheme.Theme.appearance -cne 'light' -or
+    $initialTheme.Theme.art.safeArea -cne 'center' -or
     $initialTheme.Theme.art.taskMode -cne 'ambient' -or
-    [System.IO.Path]::GetExtension($initialTheme.ImagePath) -cne '.jpg') {
-    throw 'Default Windows theme did not seed the Arina Hashimoto wallpaper contract.'
+    [System.IO.Path]::GetExtension($initialTheme.ImagePath) -cne '.png') {
+    throw 'Default Windows theme did not seed the ERBU wallpaper contract.'
   }
   $preseededThemes = @(Get-DreamSkinSavedThemes -StateRoot $themeStateRoot)
   if ($preseededThemes.Count -ne 1 -or
-    $preseededThemes[0].Id -cne 'preset-romantic-rose' -or
-    $preseededThemes[0].Name -cne '桥本有菜') {
-    throw 'Arina Hashimoto was not preseeded in the Windows saved-theme menu.'
+    $preseededThemes[0].Id -cne 'preset-erbu-dream-skin' -or
+    $preseededThemes[0].Name -cne '一二布布 Dream Skin') {
+    throw 'ERBU theme was not preseeded in the Windows saved-theme menu.'
   }
-  $updatedTheme = Set-DreamSkinActiveTheme -ImagePath (Join-Path $Root 'assets\dream-reference.jpg') `
+  $updatedTheme = Set-DreamSkinActiveTheme -ImagePath (Join-Path $Root 'assets\erbu2.png') `
     -Theme $null -Name '测试主题' -StateRoot $themeStateRoot
   if ($updatedTheme.Theme.name -cne '测试主题' -or
     $updatedTheme.Theme.id -cne 'custom' -or
@@ -649,8 +649,8 @@ try {
 
   $outsideTheme = Join-Path $temporaryRoot 'outside-theme'
   New-Item -ItemType Directory -Path $outsideTheme | Out-Null
-  Copy-Item -LiteralPath (Join-Path $Root 'assets\dream-reference.jpg') `
-    -Destination (Join-Path $outsideTheme 'dream-reference.jpg')
+  Copy-Item -LiteralPath (Join-Path $Root 'assets\erbu2.png') `
+    -Destination (Join-Path $outsideTheme 'erbu2.png')
   Copy-Item -LiteralPath (Join-Path $Root 'assets\theme.json') `
     -Destination (Join-Path $outsideTheme 'theme.json')
   $junctionTheme = Join-Path $themePaths.Saved 'junction-escape'

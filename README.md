@@ -49,9 +49,7 @@
 ## 平台支持
 
 - macOS：支持原项目底座，也已经集成好当前这套「一二布布」主题
-- Windows：仓库里带有原项目的 Windows 主题底座，但当前没有单独做一份 Windows 版「一二布布」主题包
-
-如果是 Windows 用户，当前拿到仓库后可以使用 Dream Skin 的 Windows 功能，但不能像 macOS 这边一样，直接一键套用你现在这套 ERBU 主题成品。
+- Windows：现在也已经集成可直接使用的 Windows 版「一二布布」主题
 
 ## 主题目录
 
@@ -149,7 +147,7 @@ macos/examples/bubu-theme-pack/Sync Bubu Theme.command
 - 请遵守原项目的开源协议
 - 请确认背景图、角色图和衍生素材具备公开分发权限
 - 本项目不修改官方 `.app` 安装包，依赖原项目的主题注入机制
-- 当前仓库里现成可直接应用的 ERBU 主题包是 macOS 版
+- 两个平台都已提供可直接使用的 ERBU 主题，但视觉实现细节有所不同
 
 ## 致谢
 

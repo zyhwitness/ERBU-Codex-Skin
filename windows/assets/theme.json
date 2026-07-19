@@ -1,19 +1,22 @@
 {
   "schemaVersion": 1,
-  "id": "preset-romantic-rose",
-  "name": "桥本有菜",
-  "brandSubtitle": "CODEX DREAM SKIN",
-  "tagline": "把柔光与玫瑰带进今天的工作台。",
-  "projectPrefix": "选择项目 · ",
+  "id": "preset-erbu-dream-skin",
+  "name": "一二布布 Dream Skin",
+  "brandSubtitle": "ERBU EDITION",
+  "tagline": "把布布感带进今天的 Codex 工作台。",
+  "projectPrefix": "一二布布 · ",
   "projectLabel": "◉  选择项目",
-  "statusText": "DREAM SKIN ONLINE",
-  "quote": "MAKE SOMETHING WONDERFUL",
-  "image": "dream-reference.jpg",
-  "appearance": "auto",
+  "statusText": "ERBU ONLINE",
+  "quote": "MAKE CODING SOFTER",
+  "image": "erbu2.png",
+  "appearance": "light",
   "art": {
-    "focusX": 0.72,
-    "focusY": 0.45,
-    "safeArea": "left",
+    "focusX": 0.82,
+    "focusY": 0.28,
+    "safeArea": "center",
     "taskMode": "ambient"
+  },
+  "palette": {
+    "accent": "#8f9550"
   }
 }
