@@ -13,18 +13,18 @@
 ![erbu-desktop1.png](assets/erbu-desktop1.png)
 ![erbu-desktop2.png](assets/erbu-desktop2.png)
 
-## 原项目做了什么
+## 原项目
 
-原项目 `Fei-Away/Codex-Dream-Skin` 主要负责：
+ `Fei-Away/Codex-Dream-Skin` 主要负责：
 
 - 为官方 Codex Desktop 提供主题注入能力
 - 通过本机回环 CDP 方式应用主题
 - 提供背景图主题和主题配置加载机制
 - 提供 macOS 安装、切换、恢复脚本
 
-## 这个仓库改了什么
+## 本项目
 
-在原项目基础上，这个仓库主要做了以下定制：
+在原项目基础上，本仓库主要做了以下定制：
 
 ### 1. 一二布布主题素材
 
@@ -67,10 +67,6 @@
 - `Sync Bubu Theme.command`
 
 ## 使用方式
-
-先说明一件最重要的事：
-
-这套「一二布布」主题不是单独双击图片就能生效，它依赖仓库里的 Dream Skin 底座脚本。第一次使用时，要先安装底座，再同步主题。
 
 ### 第一步：安装 Dream Skin 底座
 
