@@ -5,9 +5,8 @@
 在原项目提供的主题注入、运行时切换、背景图加载和脚本能力之上，继续做了「一二布布」主题定制和少量逻辑扩展。
 
 ## 主题效果展示
-<img width="1782" height="1089" alt="截屏2026-07-18 11 33 34" src="https://github.com/user-attachments/assets/773575fe-1887-49aa-8fc3-f2301c88ce18" />
-<img width="1782" height="1089" alt="截屏2026-07-18 11 34 27" src="https://github.com/user-attachments/assets/a83198c0-c82e-446d-bbf2-872bd6010f45" />
-
+![erbu-desktop1.png](assets/erbu-desktop1.png)
+![erbu-desktop2.png](assets/erbu-desktop2.png)
 
 ## 原项目做了什么
 
