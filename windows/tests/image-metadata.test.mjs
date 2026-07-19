@@ -19,8 +19,8 @@ assert.deepEqual(readImageMetadata(featured, ".png"), {
   width: 1672,
   height: 941,
   ratio: 1672 / 941,
-  wide: false,
-  aspect: "standard",
+  wide: true,
+  aspect: "wide",
   taskMode: "ambient",
 });
 
