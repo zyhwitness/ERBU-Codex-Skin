@@ -131,17 +131,6 @@ macos/examples/bubu-theme-pack/Sync Bubu Theme.command
 2. 用同步脚本覆盖 live 目录
 3. 立即应用查看效果
 
-## 给使用者的最短步骤
-
-如果你只是想直接用这套主题，而不是继续改源码，按下面走就行：
-
-1. 安装官方 Codex Desktop，并至少启动过一次
-2. clone 本仓库
-3. 进入 `macos/` 目录执行 `./scripts/install-dream-skin-macos.sh --no-launch`
-4. 回到仓库根目录执行 `./macos/examples/bubu-theme-pack/sync-live-theme.sh --apply`
-
-做到这里，这套一二布布主题才会真正被应用上。
-
 ## 按平台快速开始
 
 ### macOS
@@ -160,29 +149,6 @@ macos/examples/bubu-theme-pack/Sync Bubu Theme.command
 5. 用安装后生成的 `Codex Dream Skin` 快捷方式启动
 
 Windows 首次安装后，默认就是内置的 `一二布布 Dream Skin`。
-
-## GitHub 发布说明
-
-如果你准备把这个仓库长期作为自己的主题项目对外发布，建议在仓库首页和发布文案里明确这几点：
-
-- 这是基于 `Fei-Away/Codex-Dream-Skin` 二次修改的独立主题仓库
-- 仓库同时包含主题引擎和 ERBU 成品主题，不只是图片素材
-- `macOS` 和 `Windows` 都可以使用，但两个平台的视觉实现不完全一致
-- `macOS` 版包含额外装饰位逻辑，`Windows` 版当前是背景图加自适应主调方案
-
-你可以直接用下面这段作为仓库简介：
-
-> 基于 Fei-Away/Codex-Dream-Skin 二次定制的一套 Codex Desktop 主题仓库，内置「一二布布 Dream Skin」成品主题，支持 macOS 与 Windows。macOS 版包含更完整的角色装饰布局，Windows 版提供稳定的一体化背景主题与自适应绿色主调。
-
-## Release 建议
-
-如果你准备发 GitHub Release，建议附件或说明里至少写清：
-
-1. `macOS` 用户看根目录 README，再进入 `macos/` 按步骤安装
-2. `Windows` 用户直接看 `windows/README.md`
-3. 当前主题预览图在 `assets/erbu-desktop1.png` 和 `assets/erbu-desktop2.png`
-4. 本仓库不修改官方 Codex 安装包，依赖 Dream Skin 的运行时注入机制
-5. 如二次分发，请自行确认一二布布相关素材是否满足公开分发授权
 
 ## 注意事项
 
