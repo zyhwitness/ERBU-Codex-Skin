@@ -2,12 +2,7 @@
 
 基于开源项目 [Fei-Away/Codex-Dream-Skin](https://github.com/Fei-Away/Codex-Dream-Skin) 二次修改的一套 Codex Desktop 主题。
 
-这个仓库同时包含：
-
-- 原项目的 Dream Skin 主题引擎
-- 我定制的「一二布布」主题包
-
-也就是说，clone 整个仓库后，不只是拿到几张图片，而是拿到一套可以安装和切换主题的完整工程。
+在原项目提供的主题注入、运行时切换、背景图加载和脚本能力之上，继续做了「一二布布」主题定制和少量逻辑扩展。
 
 ## 主题效果展示
 ![erbu-desktop1.png](assets/erbu-desktop1.png)
